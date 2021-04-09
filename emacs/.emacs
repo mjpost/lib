@@ -23,6 +23,7 @@
 (global-set-key "\C-cf" 'post-fill-asterisk)
 (global-set-key "\C-cd" 'post-insert-datetime-string)
 (global-set-key "\C-c#" 'comment-or-uncomment-region)
+(global-set-key "\C-c>" 'toggle-truncate-lines)
 
 (global-set-key "\C-co" 'occur)
 (global-set-key "\C-cr" 'revert-buffer)
@@ -55,11 +56,14 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
+ '(ansi-color-names-vector
+   ["#2d3743" "#ff4242" "#74af68" "#dbdb95" "#34cae2" "#008b8b" "#00ede1" "#e1e1e0"])
  '(column-number-mode t)
- '(compilation-scroll-output (quote first-error))
- '(custom-enabled-themes (quote (misterioso)))
+ '(compilation-scroll-output 'first-error)
+ '(custom-enabled-themes '(manoj-dark))
+ '(frame-background-mode 'dark)
  '(indent-tabs-mode nil)
- '(package-selected-packages (quote (jedi markdown-mode)))
+ '(package-selected-packages '(markdown-mode+ jedi markdown-mode))
  '(require-final-newline t)
  '(show-paren-mode t)
  '(show-trailing-whitespace t)
