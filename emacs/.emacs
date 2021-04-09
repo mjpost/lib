@@ -20,6 +20,8 @@
 ;; KEYBINDINGS
 ;;(global-set-key "\C-cc" '(lambda () (interactive) (shell-command-on-region (region-beginning) (region-end) "pbcopy")))
 (global-set-key "\C-cc" 'post-pbcopy)
+(global-set-key "\M-c" 'post-pbcopy)
+(global-set-key "\M-C" 'capitalize-word)
 (global-set-key "\C-cf" 'post-fill-asterisk)
 (global-set-key "\C-cd" 'post-insert-datetime-string)
 (global-set-key "\C-c#" 'comment-or-uncomment-region)
